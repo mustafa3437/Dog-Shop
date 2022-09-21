@@ -1,0 +1,290 @@
+body
+{
+    background-color: #070707;
+    margin: 0;
+    user-select: none;
+    overflow: hidden;
+}
+nav
+{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+.icon
+{
+    margin: 0 auto;
+    margin-right: 5%;
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 13px;
+    filter: invert(53%) 
+    sepia(0%) saturate(58%) hue-rotate(170deg) 
+    brightness(95%) 
+    contrast(84%);
+
+}
+.icon:hover
+{
+    filter: invert(94%) sepia(43%) saturate(7494%) hue-rotate(97deg) brightness(112%) contrast(100%);
+}
+.line
+{
+    height: 3px;
+    width: 80%;
+    background-color: grey;
+    border-radius: 25%;
+}
+.line:nth-child(3)
+{
+    width: 50%;
+    
+}
+.name
+{
+    color: rgb(252, 252, 55);
+    margin: 10px 10%;
+    font-family: cursive;
+}
+ul
+{
+    color: white;
+    list-style-type: none;
+    display: inline-flex;
+    position: absolute;
+    top: -10px;
+    left: 15%;
+    
+}
+li:hover
+{
+    color: aqua;
+}
+li{
+    margin: 1rem;
+    font-size: 10px;
+}
+.digonal
+{
+    height: 150%;
+    width: 60px;
+    position: absolute;
+    top:-150px;
+    right: 50%;
+    z-index: -1;
+    background-color: yellow;
+    transform: rotate(40deg);
+    
+}
+.digonal1
+{
+    height: 150%;
+    width: 60px;
+    position: absolute;
+    top:-150px;
+    right: 40%;
+    z-index: -1;
+    background-color: yellow;
+    transform: rotate(40deg);
+    
+}
+.center
+{
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+span
+{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+.D
+{
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pc;
+}
+.dog
+{
+    color: white;
+    position: absolute;
+    top: -40%;
+    font-size: 15PC;
+    padding: 0;
+    z-index: -1;
+
+}
+
+.top
+{
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(dog-head.png);
+    object-fit:contain;
+    height: 150px;
+    width: 200px;
+    margin-top: 70px;
+    margin-left: 210px;
+    z-index:1;
+}
+/*.top::after
+{
+    content: '';
+    color: white;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    border-radius: 50%;
+    border: 30px solid white;
+    border-top-color: transparent;
+    translate: 20px 90px;
+    transform: rotate(-20deg);
+}*/
+.down
+{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-image: url(dog-body.png);
+    object-fit:contain;
+    height: 150px;
+    width: 170px;
+    margin-top: 0;
+    margin-left: 153px;
+    z-index:-1;
+}
+.o
+{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 30px solid white;
+
+    
+}
+.o::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    z-index: 2;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    border: 30px solid white;
+    border-top-color: transparent;
+    border-right-color: transparent;    
+}
+.dog-img
+{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    transform: translate(-36%);
+    height: 450px;
+    width: 380px;    
+}
+.next,
+.prev
+{
+    
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.next
+{
+    position: absolute;
+    bottom: 10%;
+    border: 1px solid grey;
+    margin-left: 53%;
+    
+}
+.prev
+{
+    position: absolute;
+    bottom: 10%;
+    border: 1px solid grey;
+    margin-left: 47%;
+    
+}
+.next:hover,
+.prev:hover
+{
+    background-color: aqua;
+}
+@media screen and (max-width:740px) {
+
+    li
+    {
+        margin-right: 0;
+    }
+    .digonal
+    {
+    height: 150%;
+    width: 60px;
+    position: absolute;
+    top:-150px;
+    right: 55%;
+    z-index: -1;
+    background-color: yellow;
+    transform: rotate(40deg);
+    
+    }
+.digonal1
+{
+    height: 150%;
+    width: 60px;
+    position: absolute;
+    top:-150px;
+    right: 33%;
+    z-index: -1;
+    background-color: yellow;
+    transform: rotate(40deg);
+    
+}
+
+}
+@media screen and (max-width:400px) {
+    
+    ul
+    {
+        padding:0;
+
+    }
+    li
+    {
+        margin-right: 0;
+        font-size: 8px;
+    }
+    .center
+    {
+        width: 100%;
+    }
+    .D
+    {
+        font-size:8pc;
+    }
+}
